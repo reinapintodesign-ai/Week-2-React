@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Google Fonts: Preconnect for faster font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts: Inter font family with multiple weights -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Page label: Fixed badge indicating this is the HTML version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Cards Container: Holds all pricing cards in a row -->
     <div class="cards-container">
+
+        <!-- HOBBY CARD: Free tier pricing option -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Hobby</h3>
+                
+                <!-- Price display -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+                
+                <!-- Features section -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +52,23 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary button style for free tier -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- PRO CARD: Paid tier pricing option -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Pro</h3>
+                
+                <!-- Price display with amount and billing period -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+                
+                <!-- Features section -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,8 +91,52 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary button style for paid tier (highlighted CTA) -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
+        <!-- ENTERPRISE CARD: Custom tier for teams/organizations -->
+        <div class="card">
+            <div class="card-top">
+                <!-- Plan name -->
+                <h3 class="card-title">Enterprise</h3>
+                
+                <!-- Price display with custom pricing -->
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                
+                <!-- Features section -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom integrations
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO & advanced security
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Unlimited team members
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SLA guarantees
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Secondary button for enterprise (contact sales flow) -->
+            <button class="download-button secondary">Contact Sales</button>
+        </div>
+
     </div>
 </body>
 </html>

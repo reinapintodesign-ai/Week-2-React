@@ -1,9 +1,15 @@
+/* ===========================================
+   RESET & BASE STYLES
+   =========================================== */
+
+/* Universal reset: Remove default margins/padding, use border-box sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body: Centers content vertically and horizontally */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +20,11 @@ body {
     padding: 20px;
 }
 
+/* ===========================================
+   CARDS LAYOUT
+   =========================================== */
+
+/* Container: Flexbox row layout for pricing cards */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +34,7 @@ body {
     align-items: flex-start;
 }
 
+/* Individual card: Vertical flex container with fixed width */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +46,17 @@ body {
     flex-shrink: 0;
 }
 
+/* Card top section: Contains title, price, and features */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* ===========================================
+   CARD TYPOGRAPHY
+   =========================================== */
+
+/* Plan title (e.g., "Hobby", "Pro") */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +65,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price container: Aligns amount and period on baseline */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +73,42 @@ body {
     align-items: baseline;
 }
 
+/* Price amount (e.g., "Free", "$20") */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Billing period (e.g., "/mo.") */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* ===========================================
+   FEATURES LIST
+   =========================================== */
+
+/* Content wrapper: Adds spacing below features */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* "Includes:" label text */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Features list: Removes default list styling */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Feature item: Horizontal layout with checkmark */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +117,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon styling */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +125,11 @@ body {
     font-weight: 400;
 }
 
+/* ===========================================
+   BUTTONS
+   =========================================== */
+
+/* Base button: Pill-shaped with auto margin to push to bottom */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +144,37 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Secondary button hover state */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Secondary button active/pressed state */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Primary button: Dark background for main CTA */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Primary button hover state */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Primary button active/pressed state */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* ===========================================
+   PAGE LABEL
+   =========================================== */
+
+/* Fixed label: Centered at top of viewport */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +188,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Bold text within page label */
 .page-label strong {
     color: #333;
 }
